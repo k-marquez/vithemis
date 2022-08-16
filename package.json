@@ -1,0 +1,19 @@
+{
+  "name": "vithemis",
+  "version": "1.0.0",
+  "description": "Sistema gestor de clases virtuales",
+  "main": "vithemis.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k-marquez/vithemis.git"
+  },
+  "author": "Kevin Márquez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/k-marquez/vithemis/issues"
+  },
+  "homepage": "https://github.com/k-marquez/vithemis#readme"
+}
