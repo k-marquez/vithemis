@@ -1,4 +1,4 @@
-const express = require('express')
+const express = require('express');
 const dotenv = require('dotenv');
 
 dotenv.config({path: '.env-local'});
@@ -7,7 +7,7 @@ const port = process.env.PORT || 3001
 const app = express()
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
   
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
@@ -16,7 +16,6 @@ app.get('/',(req, res) => {
 })
 
 //Rute tasks
-const taskRouter = require("./routes/tasks");
+const taskRouter = require("./app/routes/tasks");
 
-app.use('/tasks',taskRouter)
-
+app.use('/tasks',taskRouter);
